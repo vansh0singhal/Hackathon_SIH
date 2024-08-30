@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #submit{
+            color: white;
+        }
+        #Register{
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="background">
+            <img src="delhi-water-bodies-map.jpg" alt="Delhi Water Bodies Map" class="background-img">
+        </div>
+        <div class="login-container">
+            <div class="circle circle-one"></div>
+            <div class="form-container login-form">
+                <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png" alt="illustration" class="illustration" />
+                <h1 class="opacity">LOGIN</h1>
+                <form id="login-form">
+                    <input type="text" placeholder="USERNAME" required />
+                    <input type="password" placeholder="PASSWORD" required />
+                    <button  class="opacity" id="submit">SUBMIT</button>
+                </form>
+                <div class="register-forget opacity">
+                    <a href="#" id="show-signup">SIGN UP</a>
+                    <a href="">FORGOT PASSWORD</a>
+                </div>
+            </div>
+            <div class="circle circle-two"></div>
+        </div>
+        <div class="sign-up-container hidden">
+            <div class="circle circle-three"></div>
+            <div class="form-container sign-up-form">
+                <h1 class="opacity">SIGN UP</h1>
+                <form id="signup-form">
+                    <input type="text" placeholder="FULL NAME" required />
+                    <input type="text" placeholder="USERNAME" required />
+                    <input type="email" placeholder="EMAIL ADDRESS" required />
+                    <input type="password" placeholder="PASSWORD" required />
+                    <input type="tel" placeholder="MOBILE NUMBER" required />
+                    <input type="date" placeholder="DATE OF BIRTH" required />
+                    <input type="text" placeholder="ADDRESS" />
+                    <select required>
+                        <option value="" disabled selected>GENDER</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <button class="opacity" id="Register">REGISTER</button>
+                </form>
+                <div class="register-forget opacity">
+                    <a href="#" id="show-login">BACK TO LOGIN</a>
+                </div>
+            </div>
+            <div class="circle circle-four"></div>
+        </div>
+        <div class="theme-btn-container"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
